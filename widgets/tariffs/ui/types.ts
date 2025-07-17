@@ -17,6 +17,7 @@ interface ITariffButton {
 
 interface ITariffBadge {
   text: string;
+  color: string;
 }
 export interface ITariff {
   id: string;

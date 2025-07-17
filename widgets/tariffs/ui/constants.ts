@@ -36,6 +36,7 @@ export const TARIFFS_DATA: ITariff[] = [
     },
     badge: {
       text: 'Текущий тариф',
+      color: '#3ba5e0',
     },
   },
   {
@@ -73,6 +74,7 @@ export const TARIFFS_DATA: ITariff[] = [
     },
     badge: {
       text: 'Текущий тариф',
+      color: '#3ba5e0',
     },
   },
   {
@@ -80,7 +82,7 @@ export const TARIFFS_DATA: ITariff[] = [
     label: 'Business',
     description: 'Для корпоративных клиентов',
     iconUrl: '/assets/images/svg/laptop.svg',
-    color: '#000',
+    color: '#000000',
     isCurrentPlan: false,
     pricing: {
       currentPrice: 2379,
@@ -110,6 +112,7 @@ export const TARIFFS_DATA: ITariff[] = [
     },
     badge: {
       text: 'Текущий тариф',
+      color: '#3ba5e0',
     },
   },
 ];
