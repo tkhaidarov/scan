@@ -1,15 +1,15 @@
 import React from 'react';
 import TheCarousel from '@/widgets/why-choose-us/ui/TheCarousel';
 import Image from 'next/image';
-import LayoutH1 from '@/shared/layout/LayoutH1';
+import LayoutH2 from '@/shared/layout/LayoutH2';
 import LayoutSection from '@/shared/layout/LayoutSection';
 
 const WhyChooseUs = () => {
   return (
     <LayoutSection>
-      <LayoutH1>
+      <LayoutH2>
         Почему <br className="md:hidden" /> именно мы
-      </LayoutH1>
+      </LayoutH2>
       <TheCarousel />
       <div className="relative mt-[64px] h-[392px] w-full md:mt-[54px] md:aspect-[1307/576] md:h-full">
         <Image

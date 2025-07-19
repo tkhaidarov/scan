@@ -1,4 +1,4 @@
-interface ITariffPricing {
+export interface ITariffPricing {
   currentPrice: number;
   originalPrice: number;
   currency: string;
@@ -6,13 +6,14 @@ interface ITariffPricing {
   installmentPeriod: number;
   installmentCurrency: string;
 }
-interface ITariffFeature {
+export interface ITariffFeature {
   id: number;
   text: string;
 }
-interface ITariffButton {
+export interface ITariffButton {
   textSecondary: string;
   textPrimary: string;
+  bgSecondary: string;
 }
 
 interface ITariffBadge {

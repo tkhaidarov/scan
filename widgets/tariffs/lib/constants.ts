@@ -1,4 +1,4 @@
-import { ITariff } from '@/widgets/tariffs/ui/types';
+import { ITariff } from '@/widgets/tariffs/lib/types';
 
 export const TARIFFS_DATA: ITariff[] = [
   {
@@ -33,6 +33,7 @@ export const TARIFFS_DATA: ITariff[] = [
     button: {
       textSecondary: 'Перейти в личный кабинет',
       textPrimary: 'Подробнее',
+      bgSecondary: '#d2d2d2',
     },
     badge: {
       text: 'Текущий тариф',
@@ -71,6 +72,7 @@ export const TARIFFS_DATA: ITariff[] = [
     button: {
       textSecondary: 'Перейти в личный кабинет',
       textPrimary: 'Подробнее',
+      bgSecondary: '#d2d2d2',
     },
     badge: {
       text: 'Текущий тариф',
@@ -109,6 +111,7 @@ export const TARIFFS_DATA: ITariff[] = [
     button: {
       textSecondary: 'Перейти в личный кабинет',
       textPrimary: 'Подробнее',
+      bgSecondary: '#d2d2d2',
     },
     badge: {
       text: 'Текущий тариф',

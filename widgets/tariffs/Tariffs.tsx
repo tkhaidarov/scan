@@ -1,16 +1,18 @@
 import React from 'react';
-import LayoutH1 from '@/shared/layout/LayoutH1';
+import LayoutH2 from '@/shared/layout/LayoutH2';
 import LayoutSection from '@/shared/layout/LayoutSection';
 import TariffCard from '@/widgets/tariffs/ui/TariffCard';
-import { TARIFFS_DATA } from '@/widgets/tariffs/ui/constants';
+import { TARIFFS_DATA } from '@/widgets/tariffs/lib/constants';
 
 const Tariffs = () => {
   return (
     <LayoutSection>
-      <LayoutH1>Наши тарифы</LayoutH1>
-      {TARIFFS_DATA.map(tariff => (
-        <TariffCard key={tariff.id} tariff={tariff} />
-      ))}
+      <LayoutH2>Наши тарифы</LayoutH2>
+      <div className="grid min-h-screen grid-cols-1 justify-items-center gap-9 pt-4 md:grid-cols-2 lg:grid-cols-3 lg:place-items-start">
+        {TARIFFS_DATA.map(tariff => (
+          <TariffCard key={tariff.id} tariff={tariff} />
+        ))}
+      </div>
     </LayoutSection>
   );
 };

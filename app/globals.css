@@ -29,6 +29,19 @@
   --color-card-bg-orange: var(--card-orange);
   --color-card-bg-teal: var(--card-teal);
   --color-card-bg-black: var(--card-black);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -54,10 +67,24 @@
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.92 0.004 286.32);
   --input: oklch(0.92 0.004 286.32);
+  --ring: oklch(0.708 0 0);
   --card-orange: oklch(0.827 0.144 72.52);
   --card-teal: oklch(0.8533 0.096 193.85);
   --card-black: oklch(0% 0 0);
   --primary2: oklch(0.6025 0.103 192.24);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(42.26% 0.134 19.7);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(42.26% 0.134 19.7);
 }
 
 .dark {
@@ -82,8 +109,14 @@
 }
 
 @layer base {
+  html,
+  body,
+  main {
+    height: 100%;
+  }
   * {
     @apply border-border outline-ring/50;
+    letter-spacing: 0.01em;
   }
   html {
     font-family: var(--font-sans), serif;
@@ -102,24 +135,24 @@
   h2 {
     @apply font-sans;
     font-family: var(--font-ferry), serif;
-    letter-spacing: 0.01em;
     line-height: 1.2;
     font-weight: 900;
     font-size: 28px;
   }
   h3 {
     font-weight: 500;
-    letter-spacing: 0.01em;
   }
   p,
   span,
   a {
-    letter-spacing: 0.01em;
     font-weight: 400;
     line-height: 1;
   }
   a {
     font-size: 14px;
+  }
+  .input-icon {
+    @apply absolute top-1/4 right-2 h-[18px] w-[18px];
   }
 }
 @layer utilities {
