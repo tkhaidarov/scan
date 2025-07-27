@@ -1,10 +1,13 @@
 import React from 'react';
-import Image from 'next/image';
 import { Button } from '@/shared/ui/button';
 import LayoutHero from '@/shared/layout/LayoutHero';
 import LayoutH1 from '@/shared/layout/LayoutH1';
+import TheImage from '@/shared/components/TheImage';
 
 const Hero = () => {
+  const imagePath = '/assets/images/illustrations/illustration-hero-workspace.png';
+  const imageAlt = 'Hero workspace illustration';
+  const imageClassName = 'object-contain';
   return (
     <LayoutHero>
       <div className="z-1 flex-1">
@@ -23,15 +26,8 @@ const Hero = () => {
           </Button>
         </div>
       </div>
-
       <div className="relative aspect-[620/593] w-full max-w-[620px] flex-1">
-        <Image
-          src="/assets/images/illustrations/illustration-hero-workspace.png"
-          alt="Hero workspace illustration"
-          fill
-          priority
-          className="object-contain"
-        />
+        <TheImage src={imagePath} alt={imageAlt} className={imageClassName} />
       </div>
     </LayoutHero>
   );

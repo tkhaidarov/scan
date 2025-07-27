@@ -18,17 +18,22 @@ export const InputField: React.FC<IInputProps> = ({
       control={control}
       name={name}
       render={({ field, fieldState }) => (
-        <FormItem>
-          <FormLabel htmlFor={id}>{label}</FormLabel>
+        <FormItem className="gap-0">
+          <FormLabel
+            className="text-muted-foreground mb-[15px] text-[16px] leading-none font-normal"
+            htmlFor={id}
+          >
+            {label}
+          </FormLabel>
           <FormControl>
-            <div className="relative h-9">
+            <div className="relative h-11">
               <Input
                 id={id}
                 {...field}
                 type={type}
                 placeholder={placeholder}
                 className={cn(
-                  'pr-8',
+                  'h-full pr-8',
                   fieldState.error && [
                     'border-destructive focus-visible:ring-destructive/50' + ' text-destructive',
                   ],

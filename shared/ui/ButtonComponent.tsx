@@ -9,7 +9,7 @@ const ButtonComponent: React.FC<IButtonProps> = ({
   title,
   className,
   form,
-  isValid,
+  isValid = true,
 }) => {
   return (
     <Button disabled={!isValid} form={form} type={type} variant={variant} className={className}>

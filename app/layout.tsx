@@ -34,7 +34,7 @@ export default function RootLayout({
       <body className="antialiased">
         <div className="flex min-h-screen flex-col">
           <Header />
-          <main className="container mx-auto xl:max-w-[1320px]">{children}</main>
+          <main className="container mx-auto flex-1 xl:max-w-[1320px]">{children}</main>
           <Footer />
         </div>
       </body>

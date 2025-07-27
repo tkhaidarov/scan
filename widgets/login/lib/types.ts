@@ -8,20 +8,30 @@ export interface IInputProps {
   icon?: React.ReactNode;
 }
 
+type TButtonType = 'button' | 'reset' | 'submit' | undefined;
+
+type TButtonVariant =
+  | 'default'
+  | 'link'
+  | 'destructive'
+  | 'outline'
+  | 'secondary'
+  | 'ghost'
+  | null
+  | undefined;
+
 export interface IButtonProps {
-  type?: 'button' | 'reset' | 'submit' | undefined;
-  variant?:
-    | 'default'
-    | 'link'
-    | 'destructive'
-    | 'outline'
-    | 'secondary'
-    | 'ghost'
-    | null
-    | undefined;
+  type?: TButtonType;
+  variant?: TButtonVariant;
   className?: string;
   icon?: React.ReactNode;
   title: string;
   form?: string;
   isValid?: boolean;
+}
+
+export interface IAuthButtonsProps {
+  id: string;
+  title: string;
+  icon: React.ReactNode;
 }
